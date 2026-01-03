@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pink Plush Gallery</title>
+  <meta name="description" content="A cute, professional pink-themed plushie image gallery." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink-main: #ff9acb;
+      --pink-soft: #ffe3f0;
+      --pink-dark: #e75480;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, var(--pink-soft), var(--white));
+      color: #333;
+    }
+
+    header {
+      background: var(--pink-main);
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      color: white;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    header span {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    main {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .intro h2 {
+      color: var(--pink-dark);
+      font-weight: 600;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(255, 154, 203, 0.35);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 30px rgba(231, 84, 128, 0.4);
+    }
+
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .card .caption {
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    footer {
+      background: var(--pink-main);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 4rem;
+    }
+
+    footer small {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pink Plush Gallery</h1>
+    <span>cute • cozy • professional</span>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome to My Plushie World</h2>
+      <p>Upload and showcase your cutest plushies and pink aesthetics in a soft, professional gallery.</p>
+    </section>
+
+    <section class="gallery">
+      <!-- Replace image URLs with your own -->
+      <div class="card">
+        <img src=https://www.funcorp.in/cdn/shop/files/CUTEDOLL40CM_Babypink_1.jpg?v=1704719214 alt="Plushie">
+        <div class="caption">kelsey plush rare 1/5</div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1615484477778-ca3b77940c25" alt="Plush Toy">
+        <div class="caption">Soft & Cozy Plush</div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90" alt="Cute Plush">
+        <div class="caption">Sweet Plushie Vibes</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2026 Pink Plush Gallery • Made with love</small>
+  </footer>
+
+</body>
+</html>
